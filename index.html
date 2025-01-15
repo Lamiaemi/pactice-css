@@ -1,128 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>position practice</title>
+    <title>Document</title>
     <style>
-       .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-       } 
-       .tiger {
-        border: 2px solid turquoise;
-        padding: 20px;
-        border-radius: 5px;
-        width: calc(100% - 60px);
-       }
-       .tiger img {
-        width: 100%;
-       }
-       @media screen and (max-width:576px) {
+        .box {
+            background-color: aqua;
+            padding: 50px;
+            border: 3px solid firebrick;
+        }
         .container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 0px;
-       }  
-       }
-       @media screen and (min-width:576px) and (max-width:992px) {
-        .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-       }
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: repeat(3, 200px), 50px, 50px; */
+        }
+        #box-1 {
+            grid-row: span 5;
+        }
+        #box-11,#box-12 {
+            grid-column: span 3;
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 1</h3>
-            <p>price:$100</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nulla hic qui cupiditate dicta recusandae aspernatur omnis aperiam a id!</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 2</h3>
-            <p>price:$200</p>
-            <p>Esse expedita iusto voluptatum consequatur odit neque optio, quas soluta dolor! Labore sed cum quidem incidunt. Officia quidem vel doloremque!</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 3</h3>
-            <p>price:$300</p>
-            <p>Molestias vel maiores vitae, ut praesentium necessitatibus. Quibusdam laborum voluptate, perspiciatis explicabo dignissimos sapiente odio aspernatur, earum cum, iste quae!</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 4</h3>
-            <p>price:$400</p>
-            <p>Molestias quibusdam porro laboriosam sequi ab! Corrupti ratione consectetur, atque distinctio quos, facilis neque mollitia iusto molestias ex, ipsum aperiam!</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 5</h3>
-            <p>price:$500</p>
-            <p>Fugit tempora atque eligendi dolores ea explicabo mollitia similique! Est sunt accusantium culpa quo ad nostrum nihil natus quas soluta?</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 6</h3>
-            <p>price:$600</p>
-            <p>Cupiditate ad, neque perspiciatis molestias illo, dolore omnis voluptate asperiores distinctio dolor quibusdam facilis quasi, magni nesciunt deserunt possimus laboriosam!</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 7</h3>
-            <p>price:$700</p>
-            <p>Molestias odio voluptatum illum animi eos delectus facere porro. Delectus possimus deserunt vel expedita quo laudantium libero unde eum a.</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 8</h3>
-            <p>price:$800</p>
-            <p>Qui rerum aspernatur, ad repudiandae facere doloremque nemo impedit consequuntur temporibus dolore nobis eum similique earum. Facere totam omnis tenetur.</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 9</h3>
-            <p>price:$900</p>
-            <p>Quo et quas magnam aperiam! Voluptatibus enim magnam exercitationem nostrum, ad, nobis quae tempore provident cupiditate odio itaque ut. Ex.</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 10</h3>
-            <p>price:$1000</p>
-            <p>Dignissimos, est molestias. Totam soluta quaerat nisi. Amet animi laboriosam minima? Itaque quam quae natus facilis! Exercitationem ullam consequatur doloremque.</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 11</h3>
-            <p>price:$1100</p>
-            <p>Vel, ut dolorem? Dolor, quibusdam eaque ut harum excepturi ex! Non nesciunt quia tempora placeat velit eaque qui ut unde?</p>
-            <button>buy now</button>
-        </div>
-        <div class="tiger">
-            <img src="images/G.jpg" alt="">
-            <h3>tiger 12</h3>
-            <p>price:$1200</p>
-            <p>Laborum amet ducimus, eos ratione accusamus ad accusantium recusandae adipisci architecto incidunt voluptas ex commodi repellat maiores modi dolorum asperiores!</p>
-            <button>buy now</button>
-        </div>
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+        <div class="box" id="box-9">box-9</div>
+        <div class="box" id="box-10">box-10</div>
+        <div class="box" id="box-11">box-11</div>
+        <div class="box" id="box-12">box-12</div>
     </div>
 </body>
-
 </html>
